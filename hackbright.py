@@ -119,7 +119,6 @@ def get_grades_by_title(title):
             row[0], row[1], title)
     return rows
 
-
 def handle_input():
     """Main loop.
 

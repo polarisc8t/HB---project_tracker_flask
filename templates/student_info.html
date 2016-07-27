@@ -11,8 +11,13 @@
 <p>GitHub Account: {{ grade }}</p> */ -->
 
 <p>GitHub Account: 
-    {% for %}
-        {{ trifecta }}</p>
-    {% endblock %}
+    <ul>
+{% for project in trifecta %}
+        <li>{{ project[0] }} {{ project[1] }}</li>
+{% endfor %}
+    </ul>
+</p>
+
+
 </body>
 </html>

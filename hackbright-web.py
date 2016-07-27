@@ -12,11 +12,13 @@ def get_student():
     github = request.args.get('github', 'jhacks')
     first, last, github = hackbright.get_student_by_github(github)
     trifecta = hackbright.get_grades_by_github(github)
-    html = render_template("student_info.html",
+    import pdb; pdb.set_trace()
+    print "TRIFECTA %s" % trifecta
+    return render_template("student_info.html",
                            first=first,
                            last=last,
                            trifecta=trifecta)
-    return html
+
 
 @app.route("/student-search")
 def get_student_form():
